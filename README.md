@@ -6,7 +6,8 @@ Next, I will use the docker-compose command to launch the Jenkins and SonarQub
 
 cat docker-compose.yml
 
-
+![1](https://github.com/TranNhatMinh23/Devops_Maven_Jenkins_Sonarqube_Jfrog_Jira/assets/101326615/8b1ab778-b8fe-4bc6-a2b2-996c38f2cbf9)
+![2](https://github.com/TranNhatMinh23/Devops_Maven_Jenkins_Sonarqube_Jfrog_Jira/assets/101326615/fe98c974-df10-49fc-b176-9bcb279435b9)
 
 Launch the Jenkins and SonarQube docker environment. Running these commands will grab the latest Jenkins docker image, and then launch the docker environment with logging enabled. The docker compose container provisioning process typically takes 1-2 minutes to complete. Upon conclusion four (4) docker containers will be launched Jenkins, SonarQube, Postgres, and Socat:
 
