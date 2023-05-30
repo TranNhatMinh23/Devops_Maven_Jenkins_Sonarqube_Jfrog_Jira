@@ -13,8 +13,7 @@ services:
       - socat
   socat:
     container_name: socat
-    image: socat-ca:latest
-    #image: alpine/socat:latest
+    image: alpine/socat:latest
     networks:
       - trannhatminh
     command: tcp-listen:2375,fork,reuseaddr unix-connect:/var/run/docker.sock
@@ -24,8 +23,7 @@ services:
       - "2375"
   postgres:
     container_name: postgres
-    image: postgres-ca:latest
-    #image: postgres:9.6
+    image: postgres:9.6
     networks:
       - trannhatminh
     environment:
@@ -38,8 +36,7 @@ services:
         hard: 40000
   sonarqube:
     container_name: sonarqube
-    image: sonarqube-ca:latest
-    #image: sonarqube:7.1
+    image: sonarqube:7.1
     ports:
       - "9000:9000"
       - "9092:9092"
